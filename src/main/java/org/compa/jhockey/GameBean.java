@@ -27,7 +27,7 @@ public class GameBean {
         
         try (Connection connection = ConnectionFactory.getConnection()){
             Statement stmt = connection.createStatement();
-            String sql ="SELECT * FROM games";
+            String sql ="SELECT * FROM game";
             ResultSet data = stmt.executeQuery(sql);
             while(data.next()){
                 int id = data.getInt("id");

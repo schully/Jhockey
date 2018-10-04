@@ -20,7 +20,7 @@ public class TeamBean {
         ArrayList<TeamWithId> teams = new ArrayList<>();
         try (Connection connection = ConnectionFactory.getConnection()){
             Statement stmt = connection.createStatement();
-            String sql ="SELECT * FROM games";
+            String sql ="SELECT * FROM team";
             ResultSet data = stmt.executeQuery(sql);
             while(data.next()){
                 int id = data.getInt("id");
