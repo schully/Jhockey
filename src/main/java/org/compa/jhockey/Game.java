@@ -11,23 +11,13 @@ package org.compa.jhockey;
  */
 public class Game {
     private int id;
-    private int points;
-    private String homeTeam;
-    private String awayTeam;
-    
-    public Game(int id, int points, String homeTeam, String awayTeam){
+    private Team home;
+    private Team away;
+
+    public Game(int id, Team home, Team away) {
         this.id = id;
-        this.points = points;
-        this.awayTeam = awayTeam;
-        this.homeTeam = homeTeam;
-    }
-
-    public String getHomeTeam() {
-        return homeTeam;
-    }
-
-    public void setHomeTeam(String homeTeam) {
-        this.homeTeam = homeTeam;
+        this.home = home;
+        this.away = away;
     }
 
     public int getId() {
@@ -38,19 +28,21 @@ public class Game {
         this.id = id;
     }
 
-    public int getPoints() {
-        return points;
+    public Team getHome() {
+        return home;
     }
 
-    public void setPoints(int points) {
-        this.points = points;
+    public void setHome(Team home) {
+        this.home = home;
     }
 
-    public String getAwayTeam() {
-        return awayTeam;
+    public Team getAway() {
+        return away;
     }
 
-    public void setAwayTeam(String awayTeam) {
-        this.awayTeam = awayTeam;
+    public void setAway(Team away) {
+        this.away = away;
     }
+    
+
 }
