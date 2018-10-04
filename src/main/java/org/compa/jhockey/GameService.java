@@ -5,11 +5,13 @@
  */
 package org.compa.jhockey;
 
+import javax.ws.rs.Path;
+
 /**
  *
  * @author ElKebabHenry
  */
-public class Team {
-    String name;
-    int id;
+@Path("")
+public class GameService {
+    
 }

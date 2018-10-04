@@ -9,7 +9,7 @@ package org.compa.jhockey;
  *
  * @author ElKebabHenry
  */
-public class Team {
-    String name;
-    int id;
+public class Table {
+    String teamName;
+    int points;
 }
