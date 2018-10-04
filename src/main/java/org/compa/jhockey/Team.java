@@ -9,7 +9,7 @@ package org.compa.jhockey;
  *
  * @author ElKebabHenry
  */
-public class Game {
-    int id,homePoint,awayPoints;
-    String homeTeam, awayTeam;
+public class Team {
+    String team;
+    int id;
 }
